@@ -105,3 +105,4 @@ export async function GET() {
 | 2026-06-25 | TREXION NFT integration: types, components, matching engine, mint UI, pages |
 | 2026-06-25 | Added Solana devnet NFT minting via @solana/kit and @metaplex-foundation/mpl-token-metadata-kit |
 | 2026-06-25 | Added GitHub Actions CI/CD workflow and comprehensive README.md |
+| 2026-06-25 | Updated README to clarify project as AI agent + web app |
