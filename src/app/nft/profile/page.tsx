@@ -29,29 +29,29 @@ export default function ProfilePage() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <Header />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-white">Your Identity NFT</h1>
-          <p className="text-neutral-400 mt-2">
+          <h1 className="text-2xl sm:text-3xl font-bold text-white">Your Identity NFT</h1>
+          <p className="text-neutral-400 mt-2 text-sm sm:text-base">
             This is your soulbound onchain profile. It cannot be transferred and represents your
             verified identity in the TREXION ecosystem.
           </p>
         </div>
 
-        <div className="mb-10 bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-          <h2 className="text-lg font-semibold text-white mb-4">Lookup Onchain NFT</h2>
-          <form onSubmit={handleFetch} className="flex gap-3">
+        <div className="mb-8 sm:mb-10 bg-neutral-900 border border-neutral-800 rounded-xl p-4 sm:p-6">
+          <h2 className="text-base sm:text-lg font-semibold text-white mb-4">Lookup Onchain NFT</h2>
+          <form onSubmit={handleFetch} className="flex flex-col sm:flex-row gap-3">
             <input
               type="text"
               value={mintAddress}
               onChange={(e) => setMintAddress(e.target.value)}
               placeholder="Enter mint address"
-              className="flex-1 rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="flex-1 rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
             />
             <button
               type="submit"
               disabled={loading}
-              className="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors disabled:opacity-50"
+              className="px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors disabled:opacity-50 min-h-[48px]"
             >
               {loading ? "Fetching..." : "Fetch"}
             </button>
@@ -76,7 +76,9 @@ export default function ProfilePage() {
         </div>
 
         <div className="flex justify-center">
-          <IdentityNFT profile={currentUserProfile} />
+          <div className="w-full max-w-sm sm:max-w-md">
+            <IdentityNFT profile={currentUserProfile} />
+          </div>
         </div>
       </main>
     </div>

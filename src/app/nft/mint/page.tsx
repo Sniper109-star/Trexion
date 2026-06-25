@@ -115,10 +115,10 @@ export default function MintPage() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <Header />
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-white">Mint Your Identity NFT</h1>
-          <p className="text-neutral-400 mt-2">
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-white">Mint Your Identity NFT</h1>
+          <p className="text-neutral-400 mt-2 text-sm sm:text-base">
             Create your soulbound onchain profile. Once minted, this NFT cannot be transferred and
             will serve as your verifiable identity in the TREXION ecosystem powered by Solana.
           </p>
@@ -130,7 +130,7 @@ export default function MintPage() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
           <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 space-y-4">
             <h2 className="text-lg font-semibold text-white">General Information</h2>
             <div>
@@ -141,7 +141,7 @@ export default function MintPage() {
                 value={formData.username}
                 onChange={handleChange}
                 required
-                className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 placeholder="Your display name"
               />
             </div>
@@ -172,7 +172,7 @@ export default function MintPage() {
                   name="industry"
                   value={formData.industry}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                   placeholder="e.g. Gaming"
                 />
               </div>
@@ -183,7 +183,7 @@ export default function MintPage() {
                   name="fundingStage"
                   value={formData.fundingStage}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                   placeholder="e.g. Seed, Series A"
                 />
               </div>
@@ -194,7 +194,7 @@ export default function MintPage() {
                   name="communitySize"
                   value={formData.communitySize}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -204,7 +204,7 @@ export default function MintPage() {
                   name="website"
                   value={formData.website}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -214,7 +214,7 @@ export default function MintPage() {
                   value={formData.objectives}
                   onChange={handleChange}
                   rows={3}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function MintPage() {
                   name="niche"
                   value={formData.niche}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                   placeholder="e.g. Gaming"
                 />
               </div>
@@ -241,7 +241,7 @@ export default function MintPage() {
                   name="audienceSize"
                   value={formData.audienceSize}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -251,7 +251,7 @@ export default function MintPage() {
                   name="engagement"
                   value={formData.engagement}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function MintPage() {
                   name="members"
                   value={formData.members}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -277,7 +277,7 @@ export default function MintPage() {
                   name="topics"
                   value={formData.topics}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -287,7 +287,7 @@ export default function MintPage() {
                   name="region"
                   value={formData.region}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -316,7 +316,7 @@ export default function MintPage() {
                   value={formData.skills}
                   onChange={handleChange}
                   rows={3}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div>
@@ -326,7 +326,7 @@ export default function MintPage() {
                   value={formData.portfolio}
                   onChange={handleChange}
                   rows={3}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div className="flex items-center gap-2">
@@ -352,7 +352,7 @@ export default function MintPage() {
                   name="interests"
                   value={formData.interests}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -363,7 +363,7 @@ export default function MintPage() {
                     name="ticketMin"
                     value={formData.ticketMin}
                     onChange={handleChange}
-                    className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                   />
                 </div>
                 <div>
@@ -373,7 +373,7 @@ export default function MintPage() {
                     name="ticketMax"
                     value={formData.ticketMax}
                     onChange={handleChange}
-                    className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                   />
                 </div>
               </div>
@@ -384,7 +384,7 @@ export default function MintPage() {
                   name="sectorFocus"
                   value={formData.sectorFocus}
                   onChange={handleChange}
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
                 />
               </div>
             </div>
@@ -401,7 +401,7 @@ export default function MintPage() {
                 onChange={handleChange}
                 min="0"
                 max="100"
-                className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-2.5 placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
               />
             </div>
           </div>
