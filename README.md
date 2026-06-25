@@ -110,6 +110,30 @@ bun run build
 bun run start
 ```
 
+## What is TREXION?
+
+TREXION is two things in one:
+
+1. **A Next.js web application** — a Solana-powered platform where members receive soulbound (non-transferable) Identity NFTs and are matched through an AI matching engine.
+2. **An AI coding agent** — an assistant that expands this repository by adding components, pages, dependencies, databases, and workflows based on user requests, using a memory bank and recipe system for context-aware development.
+
+## AI Agent System
+
+The AI agent uses a memory bank stored in `.kilocode/rules/memory-bank/` and config files in `.kilocode/` to understand project context, goals, and conventions. It can:
+
+- Read the current project state and conventions before making changes.
+- Update the memory bank after significant changes.
+- Use recipes from `.kilocode/recipes/` to scaffold common features like databases.
+- Maintain consistency with existing architecture, tech stack, and coding standards.
+
+## Key Directories
+
+| Directory | Purpose |
+|-----------|---------|
+| `.kilocode/` | AI agent configuration, commands, agents, skills, and memory bank |
+| `src/` | Next.js application source code |
+| `.github/workflows/` | CI/CD pipelines |
+
 ## Contributing
 
 1. Create a feature branch.
