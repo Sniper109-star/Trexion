@@ -21,6 +21,8 @@ The template has been expanded into a TREXION Identity NFT application with five
 - [x] Mint NFT page with dynamic form per user type
 - [x] Profile and About pages
 - [x] Header navigation
+- [x] GitHub Actions CI/CD workflow
+- [x] Comprehensive README.md
 
 ## Current Structure
 
@@ -102,3 +104,4 @@ export async function GET() {
 |------|---------|
 | 2026-06-25 | TREXION NFT integration: types, components, matching engine, mint UI, pages |
 | 2026-06-25 | Added Solana devnet NFT minting via @solana/kit and @metaplex-foundation/mpl-token-metadata-kit |
+| 2026-06-25 | Added GitHub Actions CI/CD workflow and comprehensive README.md |
