@@ -1,8 +1,12 @@
-# Project Brief: Next.js Starter Template
+# Project Brief: TREXION Identity NFT Platform
 
 ## Purpose
 
-This is a minimal Next.js starter template designed for AI-assisted development. It provides a clean foundation that can be extended to build any type of web application through interaction with an AI assistant.
+TREXION is a Solana-powered platform where members receive soulbound (non-transferable) Identity NFTs. These NFTs serve as verifiable onchain profiles representing five user types: Startup, Creator, Community, Service Provider, and Investor. The platform includes an AI matching engine to connect members based on NFT metadata.
+
+## Current State
+
+The application integrates Solana devnet minting via `@solana/kit` and Metaplex Token Metadata.
 
 ## Target Users
 

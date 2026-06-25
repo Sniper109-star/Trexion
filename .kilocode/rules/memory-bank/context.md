@@ -92,8 +92,8 @@ export async function GET() {
 
 ## Pending Improvements
 
-- [ ] Add wallet connection (Web3 integration)
-- [ ] Add real NFT minting contract interaction
+- [ ] Add real wallet adapter (Phantom/Solflare integration)
+- [ ] Host TREXION metadata JSON for NFT URIs
 - [ ] Add testing setup recipe
 
 ## Session History
@@ -101,3 +101,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | 2026-06-25 | TREXION NFT integration: types, components, matching engine, mint UI, pages |
+| 2026-06-25 | Added Solana devnet NFT minting via @solana/kit and @metaplex-foundation/mpl-token-metadata-kit |

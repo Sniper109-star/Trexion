@@ -59,7 +59,11 @@ bun typecheck      # Run TypeScript type checking
 {
   "next": "^16.1.3", // Framework
   "react": "^19.2.3", // UI library
-  "react-dom": "^19.2.3" // React DOM
+  "react-dom": "^19.2.3", // React DOM
+  "@solana/kit": "^6.10.0", // Solana SDK
+  "@metaplex-foundation/mpl-token-metadata-kit": "^0.0.3", // NFT metadata
+  "@solana-program/token": "^0.14.0", // Solana token program types
+  "@solana-program/system": "^0.12.2" // Solana system program types
 }
 ```
 
