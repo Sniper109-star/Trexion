@@ -52,20 +52,20 @@ export function AIMatchingEngine() {
 
   return (
     <div className="space-y-6">
-      <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 sm:p-6 shadow-lg">
+      <div className="bg-blue-900 border border-blue-800 rounded-xl p-4 sm:p-6 shadow-lg">
         <h2 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-3 lg:mb-4">AI Matching Engine</h2>
-        <p className="text-neutral-400 text-xs sm:text-sm mb-4 sm:mb-5 lg:mb-6">
+        <p className="text-blue-200 text-xs sm:text-sm mb-4 sm:mb-5 lg:mb-6">
           Search for verified TREXION members by type, niche, or metrics. The AI ranks matches by
           relevance, reputation, and fit.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
-            <label className="block text-sm text-neutral-400 mb-1.5">Looking for</label>
+            <label className="block text-sm text-blue-200 mb-1.5">Looking for</label>
             <select
               value={searchType}
               onChange={(e) => setSearchType(e.target.value as UserType)}
-              className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
+              className="w-full rounded-lg bg-blue-800 border border-blue-700 text-white p-3 text-base focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[48px]"
             >
               {userTypeOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -78,24 +78,24 @@ export function AIMatchingEngine() {
           {searchType === "creator" && (
             <>
               <div>
-                <label className="block text-sm text-neutral-400 mb-1.5">Niche</label>
+                <label className="block text-sm text-blue-200 mb-1.5">Niche</label>
                 <input
                   type="text"
                   value={niche}
                   onChange={(e) => setNiche(e.target.value)}
                   placeholder="e.g. Gaming, Tech, Art"
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
+                  className="w-full rounded-lg bg-blue-800 border border-blue-700 text-white p-3 text-base placeholder:text-blue-400 focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[48px]"
                 />
               </div>
               <div>
-                <label className="block text-sm text-neutral-400 mb-1.5">Min Followers</label>
+                <label className="block text-sm text-blue-200 mb-1.5">Min Followers</label>
                 <input
                   type="number"
                   value={minFollowers}
                   onChange={(e) => setMinFollowers(e.target.value)}
                   placeholder="10000"
                   min="0"
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
+                  className="w-full rounded-lg bg-blue-800 border border-blue-700 text-white p-3 text-base placeholder:text-blue-400 focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[48px]"
                 />
               </div>
             </>
@@ -104,31 +104,31 @@ export function AIMatchingEngine() {
           {searchType === "startup" && (
             <>
               <div>
-                <label className="block text-sm text-neutral-400 mb-1.5">Industry</label>
+                <label className="block text-sm text-blue-200 mb-1.5">Industry</label>
                 <input
                   type="text"
                   value={industry}
                   onChange={(e) => setIndustry(e.target.value)}
                   placeholder="e.g. Gaming, Fintech"
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
+                  className="w-full rounded-lg bg-blue-800 border border-blue-700 text-white p-3 text-base placeholder:text-blue-400 focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[48px]"
                 />
               </div>
               <div>
-                <label className="block text-sm text-neutral-400 mb-1.5">Min Community Size</label>
+                <label className="block text-sm text-blue-200 mb-1.5">Min Community Size</label>
                 <input
                   type="number"
                   value={minCommunity}
                   onChange={(e) => setMinCommunity(e.target.value)}
                   placeholder="10000"
                   min="0"
-                  className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
+                  className="w-full rounded-lg bg-blue-800 border border-blue-700 text-white p-3 text-base placeholder:text-blue-400 focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[48px]"
                 />
               </div>
             </>
           )}
 
           <div>
-            <label className="block text-sm text-neutral-400 mb-1.5">Min Reputation (0-100)</label>
+            <label className="block text-sm text-blue-200 mb-1.5">Min Reputation (0-100)</label>
             <input
               type="number"
               value={minReputation}
@@ -136,14 +136,14 @@ export function AIMatchingEngine() {
               placeholder="70"
               min="0"
               max="100"
-              className="w-full rounded-lg bg-neutral-800 border border-neutral-700 text-white p-3 text-base placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[48px]"
+              className="w-full rounded-lg bg-blue-800 border border-blue-700 text-white p-3 text-base placeholder:text-blue-400 focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[48px]"
             />
           </div>
         </div>
 
         <button
           onClick={handleSearch}
-          className="mt-4 sm:mt-5 sm:mt-6 w-full sm:w-auto px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors min-h-[48px]"
+          className="mt-4 sm:mt-5 sm:mt-6 w-full sm:w-auto px-6 py-3 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium transition-colors min-h-[48px]"
         >
           Find Matches
         </button>
@@ -157,7 +157,7 @@ export function AIMatchingEngine() {
               : "No matches found"}
           </h3>
           {results.length === 0 && (
-            <p className="text-neutral-400 text-sm">
+            <p className="text-blue-200 text-sm">
               Try broadening your search criteria or lowering the reputation threshold.
             </p>
           )}
@@ -176,41 +176,41 @@ function MatchCard({ result }: { result: MatchResult }) {
   const { profile, score, reasons } = result;
 
   return (
-    <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-3 sm:p-4 lg:p-5 shadow-lg hover:border-neutral-700 transition-colors">
+    <div className="bg-blue-900 border border-blue-800 rounded-xl p-3 sm:p-4 lg:p-5 shadow-lg hover:border-blue-700 transition-colors">
       <div className="flex items-center justify-between mb-2 sm:mb-3">
         <div className="min-w-0 flex-1">
           <h4 className="text-white font-medium text-sm sm:text-base truncate">{profile.username}</h4>
-          <p className="text-xs text-neutral-500">#{profile.tokenId}</p>
+          <p className="text-xs text-blue-300">#{profile.tokenId}</p>
         </div>
         <NFTBadge userType={profile.userType} size="sm" />
       </div>
 
       <div className="space-y-2">
         <div className="flex items-center justify-between text-sm">
-          <span className="text-neutral-400">Reputation</span>
+          <span className="text-blue-200">Reputation</span>
           <span className="text-white font-mono">{profile.reputation}/100</span>
         </div>
-        <div className="w-full bg-neutral-800 rounded-full h-1.5">
+        <div className="w-full bg-blue-800 rounded-full h-1.5">
           <div
-            className="bg-purple-500 h-1.5 rounded-full"
+            className="bg-amber-500 h-1.5 rounded-full"
             style={{ width: `${profile.reputation}%` }}
           ></div>
         </div>
         <div className="flex items-center justify-between text-sm">
-          <span className="text-neutral-400">Match Score</span>
-          <span className="text-purple-400 font-mono">{score}%</span>
+          <span className="text-blue-200">Match Score</span>
+          <span className="text-amber-400 font-mono">{score}%</span>
         </div>
-        <div className="w-full bg-neutral-800 rounded-full h-1.5">
+        <div className="w-full bg-blue-800 rounded-full h-1.5">
           <div
-            className="bg-gradient-to-r from-purple-500 to-pink-500 h-1.5 rounded-full"
+            className="bg-gradient-to-r from-purple-500 to-yellow-500 h-1.5 rounded-full"
             style={{ width: `${Math.min(score, 100)}%` }}
           ></div>
         </div>
         {reasons.length > 0 && (
           <ul className="space-y-1 mt-2">
             {reasons.slice(0, 3).map((reason, i) => (
-              <li key={i} className="text-xs text-neutral-400 flex items-start">
-                <span className="text-purple-400 mr-1">•</span>
+              <li key={i} className="text-xs text-blue-200 flex items-start">
+                <span className="text-amber-400 mr-1">•</span>
                 {reason}
               </li>
             ))}

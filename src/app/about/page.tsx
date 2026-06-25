@@ -2,12 +2,12 @@ import { Header } from "@/components/layout/Header";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-white">
+    <div className="min-h-screen bg-blue-950 text-white">
       <Header />
       <main className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">About TREXION Identity NFTs</h1>
-          <div className="space-y-5 sm:space-y-6 text-neutral-300 text-sm sm:text-base">
+          <div className="space-y-5 sm:space-y-6 text-blue-100 text-sm sm:text-base">
             <p>
               TREXION Identity NFTs are soulbound, non-transferable tokens that serve as verifiable
               onchain profiles for every member of the ecosystem. Unlike traditional NFTs that can be
@@ -48,9 +48,9 @@ export default function AboutPage() {
                   fields: "Interests, ticket size, sector focus",
                 },
               ].map((item) => (
-                <div key={item.type} className="p-4 rounded-lg bg-neutral-900 border border-neutral-800">
+                <div key={item.type} className="p-4 rounded-lg bg-blue-900 border border-blue-800">
                   <h3 className="font-semibold text-white text-sm sm:text-base">{item.type} NFT</h3>
-                  <p className="text-xs sm:text-sm text-neutral-400 mt-1">Stores: {item.fields}</p>
+                  <p className="text-xs sm:text-sm text-blue-200 mt-1">Stores: {item.fields}</p>
                 </div>
               ))}
             </div>

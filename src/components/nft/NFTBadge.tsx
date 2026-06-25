@@ -6,8 +6,8 @@ interface NFTBadgeProps {
 }
 
 const userTypeColors: Record<UserType, string> = {
-  startup: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  creator: "bg-purple-500/20 text-purple-400 border-purple-500/30",
+  startup: "bg-blue-500/20 text-blue-400 border-amber-500/30",
+  creator: "bg-amber-500/20 text-amber-400 border-purple-500/30",
   community: "bg-green-500/20 text-green-400 border-green-500/30",
   service_provider: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
   investor: "bg-pink-500/20 text-pink-400 border-pink-500/30",

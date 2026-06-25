@@ -6,21 +6,21 @@ interface CommunityNFTProps {
 
 export function CommunityNFT({ profile }: CommunityNFTProps) {
   return (
-    <div className="border-t border-neutral-800 pt-4 mt-4 space-y-3 text-sm">
-      <h3 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
+    <div className="border-t border-blue-800 pt-4 mt-4 space-y-3 text-sm">
+      <h3 className="text-xs font-semibold text-blue-300 uppercase tracking-wider">
         Community Details
       </h3>
       <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
-        <span className="text-neutral-400">Members</span>
+        <span className="text-blue-200">Members</span>
         <span className="text-white">{profile.members.toLocaleString()}</span>
       </div>
       <div>
-        <span className="text-neutral-400 block mb-1">Topics</span>
+        <span className="text-blue-200 block mb-1">Topics</span>
         <div className="flex flex-wrap gap-2">
           {profile.topics.map((topic, i) => (
             <span
               key={i}
-              className="px-2 py-1 rounded-full bg-neutral-800 text-xs text-white"
+              className="px-2 py-1 rounded-full bg-blue-800 text-xs text-white"
             >
               {topic}
             </span>
@@ -28,11 +28,11 @@ export function CommunityNFT({ profile }: CommunityNFTProps) {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
-        <span className="text-neutral-400">Region</span>
+        <span className="text-blue-200">Region</span>
         <span className="text-white">{profile.region}</span>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
-        <span className="text-neutral-400">Activity</span>
+        <span className="text-blue-200">Activity</span>
         <span
           className={`capitalize ${
             profile.activity === "high"

@@ -6,17 +6,17 @@ interface InvestorNFTProps {
 
 export function InvestorNFT({ profile }: InvestorNFTProps) {
   return (
-    <div className="border-t border-neutral-800 pt-4 mt-4 space-y-3 text-sm">
-      <h3 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
+    <div className="border-t border-blue-800 pt-4 mt-4 space-y-3 text-sm">
+      <h3 className="text-xs font-semibold text-blue-300 uppercase tracking-wider">
         Investor Details
       </h3>
       <div>
-        <span className="text-neutral-400 block mb-1">Interests</span>
+        <span className="text-blue-200 block mb-1">Interests</span>
         <div className="flex flex-wrap gap-2">
           {profile.interests.map((interest, i) => (
             <span
               key={i}
-              className="px-2 py-1 rounded-full bg-neutral-800 text-xs text-white"
+              className="px-2 py-1 rounded-full bg-blue-800 text-xs text-white"
             >
               {interest}
             </span>
@@ -24,18 +24,18 @@ export function InvestorNFT({ profile }: InvestorNFTProps) {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
-        <span className="text-neutral-400">Ticket Size</span>
+        <span className="text-blue-200">Ticket Size</span>
         <span className="text-white">
           ${profile.ticketSize.min.toLocaleString()} - ${profile.ticketSize.max.toLocaleString()}
         </span>
       </div>
       <div>
-        <span className="text-neutral-400 block mb-1">Sector Focus</span>
+        <span className="text-blue-200 block mb-1">Sector Focus</span>
         <div className="flex flex-wrap gap-2">
           {profile.sectorFocus.map((sector, i) => (
             <span
               key={i}
-              className="px-2 py-1 rounded-full bg-neutral-800 text-xs text-white"
+              className="px-2 py-1 rounded-full bg-blue-800 text-xs text-white"
             >
               {sector}
             </span>

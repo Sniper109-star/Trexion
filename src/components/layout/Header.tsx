@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <>
-      <header className="md:hidden sticky top-0 z-50 border-b border-neutral-800 bg-neutral-950/90 backdrop-blur-md">
+      <header className="md:hidden sticky top-0 z-50 border-b border-blue-800 bg-blue-950/90 backdrop-blur-md">
         <div className="flex items-center justify-between h-14 px-4">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl">🦖</span>
@@ -25,7 +25,7 @@ export function Header() {
         </div>
       </header>
 
-      <header className="hidden md:flex sticky top-0 z-50 border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-md">
+      <header className="hidden md:flex sticky top-0 z-50 border-b border-blue-800 bg-blue-950/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
@@ -42,8 +42,8 @@ export function Header() {
                     href={item.href}
                     className={`px-3 py-2 rounded-lg text-sm transition-colors ${
                       isActive
-                        ? "bg-neutral-800 text-white"
-                        : "text-neutral-400 hover:text-white hover:bg-neutral-800/50"
+                        ? "bg-blue-800 text-white"
+                        : "text-blue-200 hover:text-white hover:bg-blue-800/50"
                     }`}
                   >
                     {item.label}
@@ -55,7 +55,7 @@ export function Header() {
         </div>
       </header>
 
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-neutral-800 bg-neutral-950/95 backdrop-blur-md safe-area-pb">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-blue-800 bg-blue-950/95 backdrop-blur-md safe-area-pb">
         <div className="flex items-center justify-around h-16">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
@@ -65,8 +65,8 @@ export function Header() {
                 href={item.href}
                 className={`flex flex-col items-center justify-center gap-1 px-2 py-1 rounded-lg transition-colors min-w-[64px] ${
                   isActive
-                    ? "text-purple-400"
-                    : "text-neutral-500 hover:text-neutral-300"
+                    ? "text-amber-400"
+                    : "text-blue-300 hover:text-blue-100"
                 }`}
               >
                 <span className="text-lg">{item.icon}</span>
