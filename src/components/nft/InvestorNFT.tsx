@@ -23,7 +23,7 @@ export function InvestorNFT({ profile }: InvestorNFTProps) {
           ))}
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Ticket Size</span>
         <span className="text-white">
           ${profile.ticketSize.min.toLocaleString()} - ${profile.ticketSize.max.toLocaleString()}

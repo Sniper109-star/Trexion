@@ -29,16 +29,16 @@ export default function ProfilePage() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <Header />
-      <main className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <div className="mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white">Your Identity NFT</h1>
+      <main className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">Your Identity NFT</h1>
           <p className="text-neutral-400 mt-2 text-sm sm:text-base">
             This is your soulbound onchain profile. It cannot be transferred and represents your
             verified identity in the TREXION ecosystem.
           </p>
         </div>
 
-        <div className="mb-8 sm:mb-10 bg-neutral-900 border border-neutral-800 rounded-xl p-4 sm:p-6">
+        <div className="mb-6 sm:mb-8 lg:mb-10 bg-neutral-900 border border-neutral-800 rounded-xl p-4 sm:p-6">
           <h2 className="text-base sm:text-lg font-semibold text-white mb-4">Lookup Onchain NFT</h2>
           <form onSubmit={handleFetch} className="flex flex-col sm:flex-row gap-3">
             <input
@@ -51,7 +51,7 @@ export default function ProfilePage() {
             <button
               type="submit"
               disabled={loading}
-              className="px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors disabled:opacity-50 min-h-[48px]"
+              className="px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors disabled:opacity-50 min-h-[48px] w-full sm:w-auto"
             >
               {loading ? "Fetching..." : "Fetch"}
             </button>
@@ -76,7 +76,7 @@ export default function ProfilePage() {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full max-w-sm sm:max-w-md">
+          <div className="w-full max-w-xs sm:max-w-sm">
             <IdentityNFT profile={currentUserProfile} />
           </div>
         </div>

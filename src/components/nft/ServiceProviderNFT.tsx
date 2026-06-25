@@ -56,7 +56,7 @@ export function ServiceProviderNFT({ profile }: ServiceProviderNFTProps) {
           ))}
         </ul>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Verified</span>
         <span className={profile.verified ? "text-green-400" : "text-red-400"}>
           {profile.verified ? "Yes" : "No"}

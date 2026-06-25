@@ -53,8 +53,8 @@ export function AIMatchingEngine() {
   return (
     <div className="space-y-6">
       <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 sm:p-6 shadow-lg">
-        <h2 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">AI Matching Engine</h2>
-        <p className="text-neutral-400 text-sm mb-5 sm:mb-6">
+        <h2 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-3 lg:mb-4">AI Matching Engine</h2>
+        <p className="text-neutral-400 text-xs sm:text-sm mb-4 sm:mb-5 lg:mb-6">
           Search for verified TREXION members by type, niche, or metrics. The AI ranks matches by
           relevance, reputation, and fit.
         </p>
@@ -143,7 +143,7 @@ export function AIMatchingEngine() {
 
         <button
           onClick={handleSearch}
-          className="mt-5 sm:mt-6 w-full sm:w-auto px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors min-h-[48px]"
+          className="mt-4 sm:mt-5 sm:mt-6 w-full sm:w-auto px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors min-h-[48px]"
         >
           Find Matches
         </button>
@@ -176,10 +176,10 @@ function MatchCard({ result }: { result: MatchResult }) {
   const { profile, score, reasons } = result;
 
   return (
-    <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 sm:p-5 shadow-lg hover:border-neutral-700 transition-colors">
-      <div className="flex items-center justify-between mb-3">
+    <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-3 sm:p-4 lg:p-5 shadow-lg hover:border-neutral-700 transition-colors">
+      <div className="flex items-center justify-between mb-2 sm:mb-3">
         <div className="min-w-0 flex-1">
-          <h4 className="text-white font-medium truncate">{profile.username}</h4>
+          <h4 className="text-white font-medium text-sm sm:text-base truncate">{profile.username}</h4>
           <p className="text-xs text-neutral-500">#{profile.tokenId}</p>
         </div>
         <NFTBadge userType={profile.userType} size="sm" />

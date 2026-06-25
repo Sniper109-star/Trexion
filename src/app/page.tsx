@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <Header />
-      <main className="px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+      <main className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-6 order-2 lg:order-1">
+          <div className="space-y-5 sm:space-y-6 order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs sm:text-sm">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
@@ -17,13 +17,13 @@ export default function Home() {
               </span>
               Next-Gen Web3 Networking
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
               Your Identity,{" "}
               <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
                 Onchain
               </span>
             </h1>
-            <p className="text-neutral-400 text-base sm:text-lg max-w-xl leading-relaxed">
+            <p className="text-neutral-400 text-sm sm:text-base max-w-xl leading-relaxed">
               TREXION Identity NFTs are soulbound profiles that represent who you are in the ecosystem.
               Connect with startups, creators, communities, and investors through verifiable onchain
               credentials.
@@ -31,13 +31,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href="/nft/mint"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-neutral-900 font-semibold hover:bg-neutral-200 transition-colors min-h-[48px]"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-neutral-900 font-semibold hover:bg-neutral-200 transition-colors min-h-[48px] w-full sm:w-auto"
               >
                 Mint Your NFT
               </Link>
               <Link
                 href="/matching"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-neutral-800 text-white font-semibold hover:bg-neutral-700 transition-colors border border-neutral-700 min-h-[48px]"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-neutral-800 text-white font-semibold hover:bg-neutral-700 transition-colors border border-neutral-700 min-h-[48px] w-full sm:w-auto"
               >
                 Find Matches
               </Link>
@@ -45,14 +45,14 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center order-1 lg:order-2">
-            <div className="w-full max-w-sm sm:max-w-md">
+            <div className="w-full max-w-xs sm:max-w-sm">
               <IdentityNFT profile={currentUserProfile} />
             </div>
           </div>
         </div>
 
-        <section className="mt-16 sm:mt-24">
-          <h2 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">NFT Types</h2>
+        <section className="mt-12 sm:mt-16 lg:mt-24">
+          <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-4 sm:mb-6 lg:mb-8">NFT Types</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
             {[
               { type: "startup", description: "Industry, funding stage, community size, objectives", colorClass: "bg-blue-500/20 text-blue-400 border-blue-500/30" },

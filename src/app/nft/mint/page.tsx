@@ -79,14 +79,14 @@ export default function MintPage() {
     return (
       <div className="min-h-screen bg-neutral-950 text-white">
         <Header />
-        <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="bg-neutral-900 border border-green-500/30 rounded-xl p-8 text-center">
-            <div className="text-4xl mb-4">✅</div>
-            <h2 className="text-2xl font-bold text-white mb-2">NFT Minted Successfully</h2>
-            <p className="text-neutral-400">
+        <main className="max-w-3xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-12">
+          <div className="bg-neutral-900 border border-green-500/30 rounded-xl p-6 sm:p-8 text-center">
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">✅</div>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">NFT Minted Successfully</h2>
+            <p className="text-neutral-400 text-sm sm:text-base">
               Your TREXION Identity NFT has been minted on Solana devnet.
             </p>
-            <div className="mt-6 text-left bg-neutral-800 rounded-lg p-4 space-y-2 font-mono text-sm">
+            <div className="mt-5 sm:mt-6 text-left bg-neutral-800 rounded-lg p-4 space-y-2 font-mono text-xs sm:text-sm">
               <div>
                 <span className="text-neutral-400">Mint Address:</span>
                 <span className="text-white ml-2 break-all">{result.mintAddress}</span>
@@ -102,7 +102,7 @@ export default function MintPage() {
                 setResult(null);
                 setFormData((prev) => ({ ...prev, username: "" }));
               }}
-              className="mt-6 px-6 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors"
+              className="mt-5 sm:mt-6 px-6 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium transition-colors min-h-[48px]"
             >
               Mint Another
             </button>
@@ -115,9 +115,9 @@ export default function MintPage() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <Header />
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <div className="mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white">Mint Your Identity NFT</h1>
+      <main className="max-w-3xl mx-auto px-4 py-6 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+        <div className="mb-5 sm:mb-6 lg:mb-8">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">Mint Your Identity NFT</h1>
           <p className="text-neutral-400 mt-2 text-sm sm:text-base">
             Create your soulbound onchain profile. Once minted, this NFT cannot be transferred and
             will serve as your verifiable identity in the TREXION ecosystem powered by Solana.

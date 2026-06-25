@@ -22,11 +22,11 @@ export function StartupNFT({ profile }: StartupNFTProps) {
         <span className="text-neutral-400">Community Size</span>
         <span className="text-white">{profile.communitySize.toLocaleString()}</span>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Website</span>
         <a
           href={profile.website}
-          className="text-blue-400 hover:underline truncate max-w-[180px]"
+          className="text-blue-400 hover:underline truncate max-w-[180px] sm:text-right"
           target="_blank"
           rel="noopener noreferrer"
         >

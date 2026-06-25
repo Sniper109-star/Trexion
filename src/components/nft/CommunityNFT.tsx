@@ -10,7 +10,7 @@ export function CommunityNFT({ profile }: CommunityNFTProps) {
       <h3 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
         Community Details
       </h3>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Members</span>
         <span className="text-white">{profile.members.toLocaleString()}</span>
       </div>
@@ -27,11 +27,11 @@ export function CommunityNFT({ profile }: CommunityNFTProps) {
           ))}
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Region</span>
         <span className="text-white">{profile.region}</span>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Activity</span>
         <span
           className={`capitalize ${

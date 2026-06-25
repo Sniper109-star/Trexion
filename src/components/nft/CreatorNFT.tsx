@@ -20,15 +20,15 @@ export function CreatorNFT({ profile }: CreatorNFTProps) {
           ))}
         </ul>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Niche</span>
         <span className="text-white">{profile.niche}</span>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Audience Size</span>
         <span className="text-white">{profile.audienceSize.toLocaleString()}</span>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
         <span className="text-neutral-400">Engagement</span>
         <span className="text-white">{profile.engagement}%</span>
       </div>

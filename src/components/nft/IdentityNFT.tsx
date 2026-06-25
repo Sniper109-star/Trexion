@@ -11,14 +11,14 @@ interface IdentityNFTProps {
 
 export function IdentityNFT({ profile }: IdentityNFTProps) {
   return (
-    <div className="relative w-full max-w-md mx-auto">
+    <div className="relative w-full max-w-xs sm:max-w-sm mx-auto">
       <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 opacity-75 blur"></div>
-      <div className="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-4 sm:p-6 shadow-2xl">
-        <div className="text-center border-b border-neutral-800 pb-4 sm:pb-6 mb-4 sm:mb-6">
-          <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-neutral-800 mb-2 sm:mb-3">
-            <span className="text-xl sm:text-2xl">🪪</span>
+      <div className="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-3 sm:p-4 lg:p-6 shadow-2xl">
+        <div className="text-center border-b border-neutral-800 pb-3 sm:pb-4 lg:pb-6 mb-3 sm:mb-4 lg:mb-6">
+          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-neutral-800 mb-2 sm:mb-3">
+            <span className="text-lg sm:text-xl lg:text-2xl">🪪</span>
           </div>
-          <h1 className="text-lg sm:text-xl font-bold text-white font-mono tracking-tight">
+          <h1 className="text-base sm:text-lg lg:text-xl font-bold text-white font-mono tracking-tight">
             {profile.username}
           </h1>
           <p className="text-xs text-neutral-400 mt-1">TREXION VERIFIED</p>
@@ -26,21 +26,21 @@ export function IdentityNFT({ profile }: IdentityNFTProps) {
         </div>
 
         <div className="space-y-2 sm:space-y-3 text-sm">
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
             <span className="text-neutral-400">Type</span>
-            <span className="text-white capitalize text-right ml-2">{profile.userType.replace("_", " ")}</span>
+            <span className="text-white capitalize sm:text-right">{profile.userType.replace("_", " ")}</span>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
             <span className="text-neutral-400">Reputation</span>
-            <span className="text-white font-mono">{profile.reputation}/100</span>
+            <span className="text-white font-mono sm:text-right">{profile.reputation}/100</span>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
             <span className="text-neutral-400">Soulbound</span>
-            <span className="text-green-400">Non-transferable</span>
+            <span className="text-green-400 sm:text-right">Non-transferable</span>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-0.5 sm:gap-0">
             <span className="text-neutral-400">Minted</span>
-            <span className="text-white">{profile.mintedAt}</span>
+            <span className="text-white sm:text-right">{profile.mintedAt}</span>
           </div>
         </div>
 
