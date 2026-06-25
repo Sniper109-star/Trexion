@@ -56,6 +56,8 @@ bun run dev
 ```
 .
 ├── .github/workflows/ci.yml
+├── .replit
+├── replit.nix
 ├── .kilocode/
 │   └── rules/
 │       ├── memory-bank/
@@ -84,7 +86,8 @@ bun run dev
 │       ├── mock-data.ts
 │       ├── nft-types.ts
 │       └── solana-nft.ts
-├── package.json
+├── .replit
+├── replit.nix
 ├── tsconfig.json
 ├── next.config.ts
 ├── postcss.config.mjs
@@ -103,12 +106,26 @@ GitHub Actions workflow runs on every push and pull request to `main`:
 
 ## Deployment
 
-Build the production bundle:
+### Production Build
+
+Build and run the production bundle:
 
 ```bash
 bun run build
 bun run start
 ```
+
+### Replit
+
+Import the repo at `https://github.com/Sniper109-star/Trexion` into Replit. The included `.replit` and `replit.nix` files will automatically install Node.js 20 and Bun, then start the dev server with `bun run dev`.
+
+### Other Platforms
+
+- **Vercel**: connect the GitHub repo for automatic CI/CD.
+- **Netlify**: build command `bun run build`, publish directory `.next`.
+- **Docker**: add a `Dockerfile` using `node:20-alpine` with `bun run build` and `bun run start`.
+
+The `.next` output is static-prerendered and can be served by any Node.js host.
 
 ## What is TREXION?
 
